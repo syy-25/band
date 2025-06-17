@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>B.AND</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+        <link rel="stylesheet" href="style.css">
+
+        <!--구글 폰트-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Gugi&family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!--TOP 버튼-->
+        <a style="display:scroll; position:fixed; bottom:20px; right: 20px; z-index: 9999;" href="#home" title="top"><img src="img/top.png" width="50px"></a>
+        <!--내비게이션 + 헤더-->
+        <div class="navhead">
+            <!--내비게이션-->
+            <nav class="navbar navbar-expand-lg navbar-dark sticky-top opacity-70 rounded-pill">
+                <div class="container-fluid">
+                    <a class="gugi-font navbar-brand d-flex align-items-center me-5" href="#home">
+                        <img src="img/logo_.png" width="70" alt="로고">B.AND
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav-menu" aria-controls="nav-menu" aria-expanded="false" aria-label="메뉴">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    
+                    <div class="collapse navbar-collapse" id="nav-menu">
+                        <ul class="navbar-nav d-flex flex-row flex-wrap ms-5">
+                            <li class="nav-item"><a class="nav-link px-4" href="festival.html">페스티벌</a></li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle px-4" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">밴드</a>
+                                <ul class="dropdown-menu z-2 position-absolute">
+                                    <li><a class="dropdown-item disabled" aria-disabled="true">드래곤포니</a></li>
+                                    <li><a class="dropdown-item disabled" aria-disabled="true">엑스디너리히어로즈</a></li>
+                                    <li><a class="dropdown-item" href="ydbb.html">유다빈밴드</a></li>
+                                    <li><a class="dropdown-item disabled" aria-disabled="true">터치드</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item"><a class="nav-link px-4" href="playlist.html">플레이리스트</a></li>
+                            <li class="nav-item"><a class="nav-link px-4" href="faq.html">FAQ</a></li>
+                        </ul>
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item"><a class="nav-link px-5" href="#" role="button" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap"><i class="bi bi-person-circle fs-5"></i> MY</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!--내비게이션 끝-->
+            <!--헤더 영역-->
+            <header id="home" class="d-flex flex-column justify-content-center align-items-center vh-100 text-white">
+                <h1 class="display-3 fw-bold mb-5">B.AND</h1>
+                <h4 class="fs-2 mb-3">BAND</h4>
+                <p class="lead mb-5">밴드 붐은 왔다</p>
+            </header>
+            <!--헤더 끝-->
+            <!--밴드란?-->
+            <section class="about">
+                <div class="container py-5 px-1 mx-auto">
+                    <h1 class="text-white">밴드(band): 음악을 연주하는 단체인 '악단'</h1>
+                    <hr>
+                    <h3 class="text-white">주로 기타, 베이스, 드럼, 건반, 보컬 등으로 이루어져 있다.</h3>
+                    <br>
+                    <h4 class="text-white">기타: 줄을 튕겨서 소리를 내는 악기. 주로 6줄이다.</h4>
+                    <br>
+                    <h4 class="text-white">베이스기타: 줄을 튕겨서 저음의 소리를 내는 악기. 주로 4현이지만, 5현, 6현도 사용한다.</h4>
+                    <br>
+                    <h4 class="text-white">드럼: 리듬을 담당하는 타악기.</h4>
+                    <br>
+                    <h4 class="text-white">건반악기: 신디사이저, 전자피아노 등 건반을 눌러서 음을 내는 악기. </h4>
+                    <br>
+                    <button type="button" class="btn px-4 rounded-pill" data-bs-toggle="modal" data-bs-target="#videoModal">참고영상</button>
+                    <!--모달-->
+                    <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="videoModalTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-lg">
+                            <div class="modal-content ">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="newsModalTitle">밴드란 무엇인가</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="닫기"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="ratio ratio-16x9">
+                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/60h11vgkILs?si=Pc577MRI5YwavAr5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--모달 끝-->
+                </div>
+            </section>
+            <!--지원 아티스트 목록-->
+            <section class="artists">
+                <div class="container overflow-hidden">
+                    <h1 class="text-white">현재 지원 중인 아티스트 목록</h1>
+                    <div class="row pb-5 g-4">
+                        <div class="col-sm-6 col-lg-4">
+                            <div class="card">
+                                <img src="img/ydb_1.jpg" class="card-img-top" alt="유다밴">
+                                <div class="card-body">
+                                <h5 class="card-title">유다빈밴드</h5>
+                                <p class="card-text">YdBB</p>
+                                <a href="#" class="btn btn-primary">자세히</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4">
+                        <div class="card">
+                            <img src="img/dragonpony_1.jpg" class="card-img-top" alt="드래곤포니">
+                            <div class="card-body">
+                                <h5 class="card-title">드래곤포니</h5>
+                                <p class="card-text">Dragon Pony</p>
+                                <a href="#" class="btn">자세히</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4">
+                        <div class="card">
+                            <img src="img/xdiz_1.jpg" class="card-img-top" alt="엑디즈">
+                            <div class="card-body">
+                                <h5 class="card-title">엑스디너리 히어로즈</h5>
+                                <p class="card-text">Xdinary Heroes</p>
+                                <a href="#" class="btn btn-primary">자세히</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4">
+                        <div class="card">
+                            <img src="img/touched.jpg" class="card-img-top" alt="터치드">
+                            <div class="card-body">
+                                <h5 class="card-title">터치드</h5>
+                                <p class="card-text">TOUCHED</p>
+                                <a href="#" class="btn btn-primary">자세히</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4">
+                        <div class="card">
+                            <img src="img/qustionmark.png" class="card-img-top" alt="who?">
+                            <div class="card-body">
+                                <h5 class="card-title">who?</h5>
+                                <p class="card-text">to be continued</p>
+                                <a href="#" class="btn btn-primary"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--지원아티스트 끝-->
+            <!--새소식-->
+            <section class="issue">
+                <div class="container py-5 px-1 mx-auto">
+                    <h1 class="text-white"> 새 소식</h1><br>
+                    <div class="row">
+                        <div class="col-12 col-md-6 d-flex align-items-center">
+                            <div>
+                                <ul class="list-unstyled">
+                                    <li><a href="https://youtu.be/5d5C3rKUb2E?feature=shared" class="text-white fs-3" target="_blank">[유다빈밴드] 2025.05.18 'GET LUCKY!' 발매</a></li>
+                                    <li><a href="https://youtu.be/SFTawHRtODA?feature=shared" class="text-white fs-3" target="_blank">[드래곤포니 안태규] 복면가왕 비하인드 영상 공개</a></li>
+                                    <li><a href="https://tickets.interpark.com/contents/notice/detail/9965" class="text-white fs-3" target="_blank">[터치드] 2025.08.23 - 2025.08.24 콘서트 'ATTRACTION'</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 offset-md-6">
+                            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                </div>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active text-center">
+                                        <a href="https://youtu.be/5d5C3rKUb2E?feature=shared" target="_blank">
+                                        <img src="img/getlucky.jpg" class="img-fluid" alt="유다빈밴드 소식"></a>
+                                    </div>
+                                    <div class="carousel-item text-center">
+                                        <a href="https://youtu.be/SFTawHRtODA?feature=shared" target="_blank"><img src="img/yong.jpg" class="img-fluid" alt="드래곤포니 소식"></a>
+                                    </div>
+                                    <div class="carousel-item text-center">
+                                        <a href="https://tickets.interpark.com/contents/notice/detail/9965" target="_blank">
+                                        <img src="img/attraction.jpg" class="img-fluid" alt="터치드 소식"></a>
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--새소식 끝-->
+        </div>
+        <!--내비게이션 + 헤더 끝-->
+        <!--로그인 모달-->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Sign In</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                        <div class="mb-3">
+                            <label for="recipient-id" class="col-form-label">ID:</label>
+                            <input type="text" class="form-control" id="recipient-id">
+                        </div>
+                        <div class="mb-3">
+                            <label for="recipient-password" class="col-form-label">PASSWORD:</label>
+                            <input type="password" class="form-control" id="recipient-password">
+                        </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">로그인</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--로그인 모달 끝-->
+        <!--풋터-->
+        <footer class="footer">
+            <div class="container text-center">
+                <div class="pt-4 pb-3">
+                    <a class="px-3" href="#">
+                        <i class="bi bi-instagram text-white"></i>
+                    </a>
+                    <a class="px-3" href="#">
+                        <i class="bi bi-twitter-x text-white"></i>
+                    </a>
+                    <a class="px-3" href="#">
+                        <i class="bi bi-youtube text-white"></i>
+                    </a>
+                </div>
+                <p class="py-3 mb-0">
+                    Copyright <i class="bi bi-c-circle"></i> 2025 Designed by Yoon Seoyoung
+                </p>
+            </div>
+        </footer>
+        <!--풋터 끝-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+    </body>
+</html>

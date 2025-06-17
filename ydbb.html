@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>B.AND</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+        <link rel="stylesheet" href="style_b.css">
+
+        <!--구글 폰트-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Gugi&family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!--TOP 버튼-->
+        <a style="display:scroll; position:fixed; bottom:20px; right: 20px; z-index: 9999;" href="#home" title="top"><img src="img/top.png" width="50px"></a>
+
+        <!--내비게이션 + 헤더-->        
+        <div class="navhead">
+            <!--내비게이션-->
+            <nav class="navbar navbar-expand-lg navbar-dark sticky-top opacity-70 rounded-pill">
+                <div class="container-fluid">
+                    <a class="gugi-font navbar-brand d-flex align-items-center me-5" href="index.html">
+                        <img src="img/logo_.png" width="70" alt="로고">B.AND
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav-menu" aria-controls="nav-menu" aria-expanded="false" aria-label="메뉴">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    
+                    <div class="collapse navbar-collapse" id="nav-menu">
+                        <ul class="navbar-nav d-flex flex-row flex-wrap ms-5">
+                            <li class="nav-item"><a class="nav-link px-4" href="festival.html">페스티벌</a></li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle px-4" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">밴드</a>
+                                <ul class="dropdown-menu z-2 position-absolute">
+                                    <li><a class="dropdown-item disabled" aria-disabled="true">드래곤포니</a></li>
+                                    <li><a class="dropdown-item disabled" aria-disabled="true">엑스디너리히어로즈</a></li>
+                                    <li><a class="dropdown-item" href="ydbb.html">유다빈밴드</a></li>
+                                    <li><a class="dropdown-item disabled" aria-disabled="true">터치드</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item"><a class="nav-link px-4" href="playlist.html">플레이리스트</a></li>
+                            <li class="nav-item"><a class="nav-link px-4" href="faq.html">FAQ</a></li>
+                        </ul>
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item"><a class="nav-link px-5" href="#" role="button" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap"><i class="bi bi-person-circle fs-5"></i> MY</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!--내비게이션 끝-->
+            <!--헤더 영역-->
+            <header id="home" class="d-flex flex-column justify-content-center align-items-center vh-100 text-white">
+                <h1 class="display-3 fw-bold mb-5">유다빈밴드</h1>
+                <h4 class="fs-2 mb-3">YdBB</h4>
+            </header>
+            <!--헤더 끝-->
+        </div>
+        <!--내비게이션 + 헤더 끝-->
+        <section class="YdBB">
+            <div class="container text-center">
+                <h2 class="mb-4 fw-bold text-white">유다빈밴드 멤버 소개</h2>
+                <div class="row justify-content-center gy-4">
+                    <div class="col-12">
+                        <img src="img/ydb_1.jpg" alt="유다빈밴드 그룹 사진" class="img-fluid rounded shadow">
+                    </div>
+                    <!-- 멤버별 소개 -->
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="card border-0 shadow-sm">
+                            <img src="img/member_yoo.jpg" class="card-img-top" alt="유다빈">
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold">유다빈</h5>
+                                <p class="card-text">메인보컬 / 기타</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="card border-0 shadow-sm">
+                            <img src="img/member_drum.jpg" class="card-img-top" alt="이상운">
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold">이상운</h5>
+                                <p class="card-text">드럼 / 리더</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="card border-0 shadow-sm">
+                            <img src="img/member_cho.jpg" class="card-img-top" alt="조영윤">
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold">조영윤</h5>
+                                <p class="card-text">베이스</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="card border-0 shadow-sm">
+                            <img src="img/member_guitar.jpg" class="card-img-top" alt="이준형">
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold">이준형</h5>
+                                <p class="card-text">기타 / 서브보컬</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="card border-0 shadow-sm">
+                            <img src="img/member_keyboard.jpg" class="card-img-top" alt="유명종">
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold">유명종</h5>
+                                <p class="card-text">키보드</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--풋터-->
+        <footer class="footer">
+            <div class="container text-center">
+                <div class="pt-4 pb-3">
+                    <a class="px-3" href="#">
+                        <i class="bi bi-instagram text-white"></i>
+                    </a>
+                    <a class="px-3" href="#">
+                        <i class="bi bi-twitter-x text-white"></i>
+                    </a>
+                    <a class="px-3" href="#">
+                        <i class="bi bi-youtube text-white"></i>
+                    </a>
+                </div>
+                <p class="py-3 mb-0">
+                    Copyright <i class="bi bi-c-circle"></i> 2025 Designed by Yoon Seoyoung
+                </p>
+            </div>
+        </footer>
+        <!--풋터 끝-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+    </body>
+</html>

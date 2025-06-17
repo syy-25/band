@@ -1,0 +1,93 @@
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    margin: 0;
+}
+/* 헤더 영역 */
+.navhead {
+    min-height: 100vh;
+    padding-top: 50px;
+    background-image: linear-gradient(to top, #4759aaa8, rgba(0, 0, 0, 0.195)), url(img/blackguitar.png);
+    background-size: cover;
+    background-position: center top;
+    background-attachment: fixed;
+}
+.navbar.sticky-top {
+    top: 15px !important;
+}
+.navbar {
+    background-color: rgba(71, 89, 170, 0.85);
+    z-index: 10;
+    position: sticky;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+.navbar-brand img {
+    margin-left: 20%;
+    margin-right: 30%;
+}
+.navbar .nav-link {
+    color: rgba(244, 234, 234, 0.938);
+}
+.navbar .nav-link:hover {
+    color: rgb(141, 190, 205);
+}
+.dropdown-menu {
+    background-color: #8b8db9bc;
+}
+.dropdown-item {
+    color: #f8f8ff;
+}
+.dropdown-item:hover {
+    background-color: #9fa2d7;
+    color: #f8f8ff;
+}
+.about {
+    min-height: 100vh;
+    padding-top: 50px;
+    background-image: linear-gradient(to top, #4759aaa8, rgba(0, 0, 0, 0.195)), url(img/blackdrum.png);
+    background-size: cover;
+    background-position: center top;
+    background-attachment: fixed;
+}
+.artists {
+    min-height: 100vh;
+    padding-top: 50px;
+    background-image: linear-gradient(to top, #4759aaa8, rgba(0, 0, 0, 0.195)), url(img/keyboard__.jpg);
+    background-size: cover;
+    background-position: center top;
+    background-attachment: fixed;
+}
+.issue {
+    min-height: 100vh;
+    padding-top: 50px;
+    background-image: linear-gradient(to top, #4759aaa8, rgba(0, 0, 0, 0.195)), url(img/mic_2.png);
+    background-size: cover;
+    background-position: center top;
+    background-attachment: fixed;
+}
+.card {
+    background-color: #f8f8ffd3;
+}
+.card-title {
+    color:#4759aa;
+}
+.card-text {
+    color: #8b8db9;
+}
+.btn {
+    color: #f8f8ff;
+    background-color: #0095D9;
+}
+.btn:hover {
+    color: #f8f8ff;
+    background-color: #4759aa;
+}
+.carousel {
+    position: relative;
+    width: 40vw;
+    aspect-ratio: 16/9;
+    overflow: hidden;
+}
+.footer {
+    background-color: #4759aa;
+}
