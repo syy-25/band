@@ -107,7 +107,8 @@ table.calendar {
 .flip-card {
     background-color: transparent;
     width: 100%;
-    max-height: 500px;
+    max-height: 400px;
+    overflow: hidden;
     height: auto !important;
     padding-bottom: 75%;
     perspective: 1000px;
@@ -148,6 +149,7 @@ table.calendar {
 
 .fstvl {
     margin-bottom: 100px;
+    min-height: 400px;
 }
 
 .footer {
