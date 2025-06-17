@@ -1,5 +1,6 @@
 body {
     font-family: 'Noto Sans KR', sans-serif;
+    height: 100%
     margin: 0;
     background-image: linear-gradient(to top, #4759aaa8, rgba(0, 0, 0, 0.195)), url(img/fest.png);
     background-size: cover;
@@ -7,6 +8,11 @@ body {
     background-attachment: fixed;
 }
 /* 헤더 영역 */
+.navhead {
+    min-height: 100vh;
+    padding-bottom: 120px;
+    box-sizing: border-box;
+}
 .navbar.sticky-top {
     top: 15px !important;
 }
