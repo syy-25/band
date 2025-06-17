@@ -1,3 +1,7 @@
+html {
+    height: 100%;
+    margin: 0;
+}
 body {
     font-family: 'Noto Sans KR', sans-serif;
     height: 100%
@@ -154,4 +158,5 @@ table.calendar {
 
 .footer {
     background-color: #4759aa;
+    position: relative;
 }
