@@ -112,7 +112,6 @@ table.calendar {
     background-color: transparent;
     width: 100%;
     max-height: 400px;
-    overflow: hidden;
     height: auto !important;
     padding-bottom: 75%;
     perspective: 1000px;
